@@ -3,10 +3,10 @@ package Week3;
 import java.util.Scanner;
 import java.io.Console;
 
-public class Inches_interactive {
+public class InchesToFeetInteractive {
 
     public static void main(String args[]) {
-        Inches_interactive inches = new Inches_interactive();
+
 
         Scanner myInput = new Scanner(System.in);
         System.out.print("Enter inches: ");

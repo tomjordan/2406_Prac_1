@@ -3,6 +3,7 @@ package Week3;
 import java.util.Scanner;
 
 public class Dollars {
+
     public static void main(String args[]) {
         Scanner myInput = new Scanner(System.in);
         System.out.print("Enter Dollars: ");

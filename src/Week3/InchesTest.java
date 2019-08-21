@@ -9,7 +9,7 @@ class InchesTest {
     void testInches(){
 
         Inches inches = new Inches();
-        Inches.printValues();
+        inches.printValues();
 
     }
 }

@@ -16,11 +16,7 @@ class LeaseTest {
     }
 
     @Test void testgetset(){
-        Lease lease = new Lease();
-        lease.setAppNum(12);
-        lease.setLease(4);
-        lease.setName("Tom");
-        lease.setRent(500);
+        Lease lease = new Lease("Tom", 12, 4, 500);
         assertEquals(500, lease.getRent());
         assertEquals(12, lease.getAppNum());
         assertEquals(4, lease.getLease());

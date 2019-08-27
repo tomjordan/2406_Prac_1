@@ -7,7 +7,6 @@ public class Student {
 
 
     public Student() {
-
         IDnumber = 9999;
         credithours = 3;
         points = 12;

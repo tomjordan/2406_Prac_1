@@ -6,11 +6,18 @@ public class Lease {
     private int rent;
     private int lease;
 
-   public Lease(){
-       this.name = "Bob";
-       this.appNum = 15;
-       this.rent = 400;
-       this.lease = 12;
+    public Lease(String name, int appNum, int rent, int lease) {
+        this.name = name;
+        this.appNum = appNum;
+        this.rent = rent;
+        this.lease = lease;
+    }
+
+    public Lease() {
+        this.name = "Bob";
+        this.appNum = 15;
+        this.rent = 400;
+        this.lease = 12;
     }
 
     public void setAppNum(int appNum) {
@@ -45,11 +52,11 @@ public class Lease {
         return name;
     }
 
-    public void petFee(){
-       this.rent = this.rent+10;
+    public void petFee() {
+        this.rent = this.rent + 10;
     }
 
-    public void explainPetPolicy(){
+    public void explainPetPolicy() {
         System.out.println("The additional pet fee is due to increased " +
                 "risk of damage to the property caused by your pet");
     }

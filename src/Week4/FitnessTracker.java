@@ -7,13 +7,13 @@ public class FitnessTracker {
     private int day;
     private String month;
 
-   public FitnessTracker(){
+    public FitnessTracker() {
         this.day = 1;
         this.month = "January";
         this.minutes = 0;
     }
 
-    public FitnessTracker(int day, String month, int year, int minutes){
+    public FitnessTracker(int day, String month, int year, int minutes) {
         this.day = day;
         this.month = month;
         this.minutes = minutes;
@@ -21,22 +21,20 @@ public class FitnessTracker {
     }
 
 
-
-
-    int getMinutes(){
-       return this.minutes;
+    int getMinutes() {
+        return this.minutes;
     }
 
-    int getYear(){
-       return this.year;
+    int getYear() {
+        return this.year;
     }
 
-    int getDay(){
-       return this.day;
+    int getDay() {
+        return this.day;
     }
 
-    String getMonth(){
-       return this.month;
+    String getMonth() {
+        return this.month;
     }
 
 }

@@ -8,35 +8,29 @@ public class Sandwich {
     public String getMain() {
         return this.mainingrediant;
     }
-    public String getBread(){
+
+    public String getBread() {
         return this.breadtype;
 
-}
-    public double getPrice(){
+    }
+
+    public double getPrice() {
         return this.price;
 
     }
 
-    public void setMain( String maining){
+    public void setMain(String maining) {
         this.mainingrediant = maining;
 
     }
 
-    public void setBread(String bread){
+    public void setBread(String bread) {
         this.breadtype = bread;
     }
 
-    public void setPrice(double newprice){
+    public void setPrice(double newprice) {
         this.price = newprice;
     }
-
-
-
-
-
-
-
-
 
 
 }

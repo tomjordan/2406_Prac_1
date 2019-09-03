@@ -1,5 +1,5 @@
 package Week5;
-import java.time.LocalDate;
+
 import javax.swing.*;
 public class PastPresentFuture {
     public static void main(String[] args) {
@@ -63,16 +63,4 @@ public class PastPresentFuture {
     }
 }
 
-//    LocalDate currentDate = LocalDate.now();
-//        LocalDate userDate = LocalDate.of(c,b,a);
-//        System.out.println(currentDate);
-//        System.out.println(userDate);
-//
-//
-//        if (currentDate.isBefore(userDate))
-//            System.out.println("The chosen date is in the future");
-//        else if (currentDate.isAfter(userDate))
-//            System.out.println("The chosen date is in the past");
-//        else
-//            System.out.println("The date is the current date");
 

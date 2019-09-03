@@ -25,8 +25,11 @@ public class FixDebugSix3 {
         for(val = userNum; val > 0; --val)
         {
             System.out.print(val + " ");
-            for(int x = 0; x < 100000; ++x)
-                for(int y = 0; y < 10000; ++y);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             // Adjust these numbers for faster or slower performance
         }
         System.out.println("Blastoff!");

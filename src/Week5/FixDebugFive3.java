@@ -15,13 +15,13 @@ public class FixDebugFive3
        final int HIGH = 999;
        final int CUTOFF = 500;
        Scanner input = new Scanner(System.in);
-       System.out.println("Please enter item number between 500 and 11111 >> ");
+       System.out.println("Please enter item number between 111 and 999 >> ");
        item = input.nextInt();
        if (item < LOW)
            output = "Item number too low";
        else if (item > HIGH) {
            output = "Item number too high";
-       } else if (item < CUTOFF && item >= LOW) {
+       } else if (item < CUTOFF) {
            output = "Valid - in Automotive Department";
        } else {
            output = "Valid - Item in Housewares Department";

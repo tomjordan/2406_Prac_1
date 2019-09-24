@@ -1,27 +1,27 @@
 package Week8.Q5;
 
-public abstract class Element
-{
+public abstract class Element {
     String symbol;
     int atomicNumber;
     double atomicWeight;
-   Element(String s, int an, double aw)
-    {
+
+    Element(String s, int an, double aw) {
         symbol = s;
-        atomicNumber =an;
+        atomicNumber = an;
         atomicWeight = aw;
     }
-    String getSymbol()
-    {
+
+    String getSymbol() {
         return symbol;
     }
-    int getAtomicNumber()
-    {
+
+    int getAtomicNumber() {
         return atomicNumber;
     }
-    double getAtomicWeight()
-    {
+
+    double getAtomicWeight() {
         return atomicWeight;
     }
+
     abstract void describeElement();
 }

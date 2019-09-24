@@ -1,9 +1,7 @@
 package Week8.Q6;
 
-public class DemoBlankets
-{
-    public static void main(String[] args)
-    {
+public class DemoBlankets {
+    public static void main(String[] args) {
         Blanket b = new Blanket();
         System.out.println(b.toString());
         b.setMaterial("wool");

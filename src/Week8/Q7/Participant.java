@@ -1,38 +1,37 @@
 package Week8.Q7;
 
-public class Participant
-{
+public class Participant {
     private String name;
     private int age;
     private String address;
-    public Participant(String n, int a, String add)
-    {
+
+    public Participant(String n, int a, String add) {
         name = n;
         age = a;
         address = add;
     }
-    public String getName()
-    {
+
+    public String getName() {
         return name;
     }
-    public int getAge()
-    {
+
+    public int getAge() {
         return age;
     }
-    public String getAddress()
-    {
+
+    public String getAddress() {
         return address;
     }
-    public String toString()
-    {
+
+    public String toString() {
         return name + " " + age + " years old    " + address;
     }
-    public boolean equals(Participant p)
-    {
+
+    public boolean equals(Participant p) {
         boolean areEqual = false;
-        if(name.equals(p.getName()))
-            if(age == p.getAge())
-                if(address.equals(p.getAddress()))
+        if (name.equals(p.getName()))
+            if (age == p.getAge())
+                if (address.equals(p.getAddress()))
                     areEqual = true;
         return areEqual;
     }

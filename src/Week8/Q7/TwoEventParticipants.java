@@ -1,10 +1,9 @@
 package Week8.Q7;
+
 import java.util.*;
 
-public class TwoEventParticipants
-{
-    public static void main(String[] args)
-    {
+public class TwoEventParticipants {
+    public static void main(String[] args) {
         Participant marathoners[] = new Participant[3];
         Participant divers[] = new Participant[3];
         int i, j;
@@ -13,8 +12,7 @@ public class TwoEventParticipants
         String address;
         Scanner input = new Scanner(System.in);
         System.out.println("Enter mini-marathon participants");
-        for(i = 0; i < marathoners.length; ++i)
-        {
+        for (i = 0; i < marathoners.length; ++i) {
             System.out.print("Enter name: ");
             name = input.nextLine();
             System.out.print("Enter age: ");
@@ -25,8 +23,7 @@ public class TwoEventParticipants
             marathoners[i] = new Participant(name, age, address);
         }
         System.out.println("\nEnter diving participants");
-        for(i = 0; i < divers.length; ++i)
-        {
+        for (i = 0; i < divers.length; ++i) {
             System.out.print("Enter name: ");
             name = input.nextLine();
             System.out.print("Enter age: ");
@@ -37,9 +34,9 @@ public class TwoEventParticipants
             divers[i] = new Participant(name, age, address);
         }
         System.out.println("\nParticipants who are in both events:");
-        for(i = 0; i < marathoners.length; ++i)
-            for(j = 0; j < divers.length; ++j)
-                if(marathoners[i].equals(divers[j]))
+        for (i = 0; i < marathoners.length; ++i)
+            for (j = 0; j < divers.length; ++j)
+                if (marathoners[i].equals(divers[j]))
                     System.out.println(marathoners[i].toString());
     }
 }

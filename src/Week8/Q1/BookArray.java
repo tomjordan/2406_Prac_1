@@ -1,8 +1,7 @@
 package Week8.Q1;
 
 public class BookArray {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Book someBook[] = new Book[10];
         int x;
         someBook[0] = new Fiction("Scarlet Letter");
@@ -15,7 +14,7 @@ public class BookArray {
         someBook[7] = new Fiction("A Simple Plan");
         someBook[8] = new Fiction("Disclosure");
         someBook[9] = new Fiction("Nancy Drew");
-        for(x = 0; x < someBook.length; ++x)
+        for (x = 0; x < someBook.length; ++x)
             System.out.println("Book: " +
                     someBook[x].getTitle() + " costs $" +
                     someBook[x].getPrice());

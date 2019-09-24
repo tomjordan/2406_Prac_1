@@ -1,7 +1,6 @@
 package Week8.Q6;
 
-public class Blanket
-{
+public class Blanket {
     protected String size;
     protected String color;
     protected String material;
@@ -21,12 +20,12 @@ public class Blanket
     private final String MAT3 = "cashmere";
     private final double M_PRICE2 = 20;
     private final double M_PRICE3 = 45;
-    public Blanket()
-    {
+
+    public Blanket() {
         setDefaults();
     }
-    private void setDefaults()
-    {
+
+    private void setDefaults() {
         size = SIZE1;
         color = "white";
         material = "cotton";
@@ -34,53 +33,48 @@ public class Blanket
         materialPremium = 0;
         price = BASE_PRICE;
     }
-    public String getSize()
-    {
+
+    public String getSize() {
         return size;
     }
-    public String getColor()
-    {
+
+    public String getColor() {
         return color;
     }
-    public String getMaterial()
-    {
+
+    public String getMaterial() {
         return material;
     }
-    public void setSize(String s)
-    {
+
+    public void setSize(String s) {
         size = s;
-        if(s.equals(SIZE1))
+        if (s.equals(SIZE1))
             sizePremium = 0;
-        else
-        if(s.equals(SIZE2))
+        else if (s.equals(SIZE2))
             sizePremium = S_PRICE2;
-        else
-        if(s.equals(SIZE3))
+        else if (s.equals(SIZE3))
             sizePremium = S_PRICE3;
-        else
-        if(s.equals(SIZE4))
+        else if (s.equals(SIZE4))
             sizePremium = S_PRICE4;
         else
             setDefaults();
         price = BASE_PRICE + sizePremium + materialPremium;
     }
-    public void setMaterial(String m)
-    {
+
+    public void setMaterial(String m) {
         material = m;
-        if(m.equals(MAT1))
+        if (m.equals(MAT1))
             materialPremium = 0;
-        else
-        if(m.equals(MAT2))
+        else if (m.equals(MAT2))
             materialPremium = M_PRICE2;
-        else
-        if(m.equals(MAT3))
+        else if (m.equals(MAT3))
             materialPremium = M_PRICE3;
         else
             setDefaults();
         price = BASE_PRICE + sizePremium + materialPremium;
     }
-    public String toString()
-    {
+
+    public String toString() {
         return size + " size " + material + " blanket.  Price $" + price;
     }
 }

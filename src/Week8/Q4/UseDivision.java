@@ -1,9 +1,7 @@
 package Week8.Q4;
 
-public abstract class UseDivision
-{
-    public static void main(String[] args)
-    {
+public abstract class UseDivision {
+    public static void main(String[] args) {
         DomesticDivision abcDomDiv = new
                 DomesticDivision("Sales", 123, "California");
         DomesticDivision xyzDomDiv = new

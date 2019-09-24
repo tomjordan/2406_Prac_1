@@ -1,13 +1,11 @@
 package Week8.Q5;
 
-public class NonMetalElement extends Element
-{
-    NonMetalElement(String s, int an, double aw)
-    {
+public class NonMetalElement extends Element {
+    NonMetalElement(String s, int an, double aw) {
         super(s, an, aw);
     }
-    public void describeElement()
-    {
+
+    public void describeElement() {
         System.out.println("A nonmetal, like " + getSymbol() +
                 " with atomic number " + getAtomicNumber() +
                 " and an atomic weight of " + getAtomicWeight() +

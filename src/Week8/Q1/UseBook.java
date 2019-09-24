@@ -1,8 +1,7 @@
 package Week8.Q1;
 
 public class UseBook {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Fiction aNovel = new Fiction("Huckelberry Finn");
         NonFiction aManual = new
                 NonFiction("Elements of Style");

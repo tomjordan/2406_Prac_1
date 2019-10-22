@@ -13,9 +13,7 @@ import javax.swing.JTextField;
 
 public class JEmail extends JFrame implements ActionListener
 {
-    //class level variables
     JTextArea ta = new JTextArea( 10 , 60);
-    //labels, button and text field instances
     JLabel companylogo = new JLabel("We Buy Company");
     JLabel to = new JLabel("To: ");
     JLabel subject = new JLabel("Subject: ");
@@ -25,15 +23,13 @@ public class JEmail extends JFrame implements ActionListener
     JTextField subjectTextField = new JTextField(15);
     JButton send = new JButton("Send");
     JButton clear = new JButton("Clear");
-    //get the container for components
     Container con = getContentPane();
 
     public JEmail()
     {
-        setLayout(new FlowLayout());//set layout
+        setLayout(new FlowLayout());
         con.add(companylogo);
         companylogo.setFont(new Font("Monaco", Font.BOLD,18));
-        //add labels, button and area to container
         con.add(to);
         con.add(toTextField);
         con.add(subject);
@@ -42,14 +38,12 @@ public class JEmail extends JFrame implements ActionListener
         con.add(ta);
         con.add(send);
         con.add(clear);
-        //add action listener to the button
         send.addActionListener(this);
         clear.addActionListener(this);
     }
 
     public static void main(String[] args)
     {
-        //create a mail object
         JEmail myMail = new JEmail();
         myMail.setVisible(true);
         myMail.setSize( 800,270);
@@ -63,7 +57,6 @@ public class JEmail extends JFrame implements ActionListener
         Object source = e.getSource();
         if( source == send )
         {
-            //add a confirmation message to shoe message sent on button click
             confirmation.setText("Message has been sent !! ");
             con.add(confirmation);
             send.setEnabled(false);

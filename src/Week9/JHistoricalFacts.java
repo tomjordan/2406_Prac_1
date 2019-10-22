@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class JHistoricalFacts extends JFrame implements ActionListener{
-    FlowLayout flow = new FlowLayout();
+    JLabel mainFrame = new JLabel();
     JButton b = new JButton("Press to change fact");
     JLabel f1 = new JLabel("In 1926, Arctic explorer Peter Freuchen was trapped under an avalanche while on an expedition. He escaped from death by fashioning a shiv out of his own feces and amputating his foot.");
     JLabel f2 = new JLabel("In ancient Egypt, servants were smeared with honey to attract flies away from the pharaoh.");
@@ -17,10 +17,11 @@ public class JHistoricalFacts extends JFrame implements ActionListener{
 
     public JHistoricalFacts() {
         super("Historical Facts");
-        setLayout(flow);
+        mainFrame.setLayout(new GridLayout(2, 1));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        add(b);
-        add(f1);
+        add(mainFrame);
+        mainFrame.add(b);
+        mainFrame.add(f1);
         b.addActionListener(this);
 
     }
@@ -32,26 +33,29 @@ public class JHistoricalFacts extends JFrame implements ActionListener{
 
     }
     public void actionPerformed(ActionEvent e){
-        if(counter == 5)
+        if(counter == 6)
             counter = 0;
         if(counter == 0){
-            remove(f1);
-            add(f2);
+            mainFrame.remove(f1);
+            mainFrame.add(f2);
         }else if (counter == 1){
-            remove(f2);
-            add(f3);
+            mainFrame.remove(f2);
+            mainFrame.add(f3);
         }else if (counter == 2){
-            remove(f3);
-            add(f4);
+            mainFrame.remove(f3);
+            mainFrame.add(f4);
         }else if (counter == 3){
-            remove(f4);
-            add(f5);
+            mainFrame.remove(f4);
+            mainFrame.add(f5);
+        }else if (counter == 4){
+            mainFrame.remove(f5);
+            mainFrame.add(f6);
         }else{
-            remove(f5);
-            add(f1);
+            mainFrame.remove(f6);
+            mainFrame.add(f1);
         }
         counter ++;
-        validate();
-        repaint();
+        mainFrame.validate();
+        mainFrame.repaint();
     }
 }
